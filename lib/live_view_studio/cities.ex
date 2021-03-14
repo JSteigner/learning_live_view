@@ -1,4 +1,4 @@
-defmodule LiveViewStudio.Cities do
+ defmodule LiveViewStudio.Cities do
   def suggest(""), do: []
 
   def suggest(prefix) do
