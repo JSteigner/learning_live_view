@@ -57,7 +57,7 @@ defmodule LiveViewStudio.Volunteers do
     %Volunteer{}
     |> Volunteer.changeset(attrs)
     |> Repo.insert()
-    |> broadcast(:voluntter_created)
+    |> broadcast(:volunteer_created)
   end
 
   @doc """
