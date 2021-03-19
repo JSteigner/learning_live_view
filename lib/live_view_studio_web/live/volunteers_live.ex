@@ -58,13 +58,10 @@ defmodule LiveViewStudioWeb.VolunteersLive do
         %{checked_out: !volunteer.checked_out}
       )
 
-    socket =
-      assign(socket,
-        volunteers: volunteers
-      )
-
       {:noreply, socket}
   end
+
+
 
   def handle_info({:volunteer_created, volunteer}, socket) do
     socket =
